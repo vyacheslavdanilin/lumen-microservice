@@ -16,3 +16,7 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('/update', 'ServiceController@update');
+$router->get('/state', 'ServiceController@state');
+$router->get('/get_names', 'PersonController@search');
